@@ -1,0 +1,28 @@
+{
+  "name": "git-ops-update-actions",
+  "version": "0.1.0-alpha.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run build-docker-labels",
+    "build-docker-labels": "ncc build docker-labels/index.ts --out docker-labels/dist --license licenses.txt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/airfocusio/git-ops-update-actions.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/airfocusio/git-ops-update-actions/issues"
+  },
+  "homepage": "https://github.com/airfocusio/git-ops-update-actions#readme",
+  "dependencies": {
+    "@actions/core": "^1.9.0",
+    "@actions/github": "^5.0.3"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.34.0",
+    "typescript": "^4.7.4"
+  }
+}

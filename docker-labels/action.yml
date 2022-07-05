@@ -1,0 +1,12 @@
+name: "git-ops-update docker labels"
+description: "git-ops-update docker labels"
+inputs:
+  github-token:
+    description: 'Github token'
+    required: true
+outputs:
+  docker-labels:
+    description: 'The docker labels'
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
